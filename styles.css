@@ -1,0 +1,160 @@
+body, h1, p {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+}
+ body {
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+	 /* Récupéré depuis le site https://fr.freepik.com/ */
+     background-image: url('images/bouldering-wall-background-rock-climbing-practice.jpg'); 
+    /* L'URL de l'image */
+     background-attachment: fixed;
+    /* L'image ne bouge pas quand on descend */
+     background-size: cover;
+    /* L'image couvre toute la surface */
+     background-position: center;
+    /* Centrer l'image */
+     margin: 0;
+     font-family: Arial, sans-serif;
+}
+ header {
+     background-image: url('images/photo-escalade-bandeau-1536x354.jpg');
+    /* L'URL de l'image */
+     background-attachment: scroll;
+    /* L'image ne bouge pas quand on descend */
+     background-size: cover;
+    /* L'image couvre toute la surface */
+     background-position: center;
+    /* Centrer l'image */
+     color: white;
+     text-align: center;
+     padding: 20px 0;
+}
+ main {
+     box-shadow: 10px 10px 5px black; /*met une ombre sous la boite*/
+     width: 80%;
+     margin: 40px auto;
+     background-color: white;
+     padding: 20px;
+     display: grid;
+	 grid-template-columns: repeat(2, 1fr); /* 2 colonnes de largeur égale */
+     gap: 20px; /* Espacement entre les éléments */
+}
+ footer {
+     display: flex;
+     justify-content: center; /* Centre les éléments horizontalement */
+	 align-items: center;
+     background-color: #333; /* défini la couleur du fond du pied de page*/
+     color: white;
+     text-align: center; /* met le texte au centre*/
+     padding: 10px 0;
+     margin-top: auto;
+}
+ nav {
+}
+ ul {
+     list-style-type: none;
+    /* Supprimer les puces de la liste */
+     margin: 0;
+     padding: 0;
+     display: flex;
+    /* Afficher les éléments horizontalement */
+     justify-content: center;
+    /* Centrer les éléments */
+}
+li {
+     margin: 0 15px;
+     padding: 15px 20px;
+    /* Espacement entre les éléments */
+}
+li a {
+     color: white; 
+    /* Couleur du texte */
+}
+ a {
+     text-decoration: none;
+    /* Enlever le soulignement */
+     font-size: 18px;
+     display: block;
+    /* S'assurer que le lien prend toute la place de l'élément */
+     transition: background-color 0.3s;
+    /* Effet de transition sur le survol */
+}
+/* Style pour l'image insta */
+.insta-link {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background-image: url('images/insta.png'); /* Image de base */
+            background-size: cover;
+            background-position: center;
+            transition: background-image 0.5s ease; /* Transition douce pour l'effet */
+}
+
+/* Changer l'image au survol */
+.insta-link:hover {
+    background-image: url('images/insta_hover.png'); /* Image quand la souris passe dessus*/
+}
+.socials {
+    margin-left: 8px;
+}
+/* Style pour l'image insta */
+.youtube-link {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background-image: url('images/youtube.png'); /* Image de base */
+            background-size: cover;
+            background-position: center;
+            transition: background-image 0.5s ease; /* Transition douce pour l'effet */
+}
+/* Changer l'image au survol */
+.youtube-link:hover {
+    background-image: url('images/youtube_hover.png'); /* Image quand la souris passe desus*/
+}
+
+input[type=email], 
+input[type=text], /*créer un champ de saisi, pour mettre l'e-mail, objet, le message...*/
+input[type=submit],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #555;					
+    border-radius: 5px;						/*défini les dimensions*/
+    font-size: 16px;
+    padding: 0px 0px;
+    width: 100%;
+}
+
+input[type="submit"] { 	/*créer un champ de saisi, pour mettre l'e-mail, objet, le message...*/
+  cursor: pointer
+}
+
+fieldset {	
+  border: none; /*enlève les bordures*/
+  padding: 0; /*défini un espace, de 0 pixel, donc pas d'espace*/
+}
+.full-width {
+  grid-column: span 2; /* Prend toute la largeur de la grille */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.half-width { 
+  grid-column: span 1; /* Chaque div prend une seule colonne */
+  padding: 20px; /* défini l'espace à 20pixels*/
+  box-sizing: border-box;
+}
+figcaption { /* défini une légende à une image */
+  background-color: #222;  
+  color: #fff; *//
+  font: italic smaller sans-serif; /* défnini la police*/
+  padding: 3px; /*donne un espace de 3 pixels*/
+  text-align: center; /* met le texte au centre*/
+}
+iframe { /*insérer un document à l'interieur de la page web */
+    border: 2px solid #000; /* Bordure de 2 pixels, noire */
+}

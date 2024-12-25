@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Me contacter</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header><!--utilisé pour définir l'en-tête de la page-->
+			<h1>Me contacter</h1>
+			 <!-- pour créer un "menu", une liste en horizontale avec des textes qui renvoient vers une autre page -->
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">Accueil</a>
+					</li>
+					<li>
+						<a href="sitevoie.html">Voie</a>
+					</li>
+					<li>
+						<a href="sitebloc.html">Bloc</a>
+					</li>
+					<li>
+						<a href="mecontacter.html">Me contacter</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	<main> <!--corps principal de la page-->
+		<div class="full-width">			
+			<h2>Envoyer un message</h2>					<!-- envoie un mail par le site formspree.io-->
+			<form action="https://formspree.io/f/mqakvprk" method="POST">
+				<label for="email">Votre email:</label>
+				<input type="email" id="email" name="email" required > <!-- créer un espace pour entrer du texte -->
+				<label for="subject">Sujet:</label>
+				<input type="text" id="subject" name="subject" required ><!-- créer un espace pour entrer du texte -->
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" rows="4" cols="50" required ></textarea>
+				<input type="submit" value="Envoyer"><!-- créer un espace pour entrer du texte -->
+			</form>
+		</div>
+	</main>
+		<footer><!-- pied de page -->
+			<p>Thibault Quéré</p>
+			<p class="socials"><a href="https://www.instagram.com/theroofbrest/?hl=fr" target="_blank" class="insta-link" title="Instagram"></a></p>
+			<p class="socials"><a href="https://www.youtube.com/@ClimbUpTV/videos" target="_blank" class="youtube-link" title="Youtube"></a></p>
+		</footer>
+	</body>
+</html>
